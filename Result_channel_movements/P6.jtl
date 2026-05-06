@@ -48,8 +48,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037649746,6374,HTTP Request,200,OK,Thread Group 1-25,text,true,,641,467,92,92,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,6374,0,24
 1778037650030,6090,HTTP Request,200,OK,Thread Group 1-28,text,true,,641,467,92,92,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,6090,0,20
 1778037651359,4761,HTTP Request,200,OK,Thread Group 1-2,text,true,,641,467,92,92,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,4761,0,0
-1778037648335,7899,HTTP Request,200,OK,Thread Group 1-10,text,true,,641,467,94,94,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,7899,0,22
 1778037650405,5829,HTTP Request,200,OK,Thread Group 1-32,text,true,,641,467,94,94,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,5828,0,26
+1778037648335,7899,HTTP Request,200,OK,Thread Group 1-10,text,true,,641,467,94,94,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,7899,0,22
 1778037651438,4796,HTTP Request,200,OK,Thread Group 1-43,text,true,,641,467,94,94,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,4796,0,20
 1778037651756,4530,HTTP Request,200,OK,Thread Group 1-27,text,true,,641,467,94,94,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,4530,0,0
 1778037651359,4931,HTTP Request,200,OK,Thread Group 1-3,text,true,,641,467,94,94,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,4931,0,0
@@ -307,8 +307,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037667560,14789,HTTP Request,200,OK,Thread Group 1-91,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,14789,0,0
 1778037667828,14533,HTTP Request,200,OK,Thread Group 1-151,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,14533,0,0
 1778037674188,8173,HTTP Request,200,OK,Thread Group 1-126,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8173,0,0
-1778037667746,14616,HTTP Request,200,OK,Thread Group 1-64,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,14616,0,0
 1778037667821,14541,HTTP Request,200,OK,Thread Group 1-4,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,14541,0,0
+1778037667746,14616,HTTP Request,200,OK,Thread Group 1-64,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,14616,0,0
 1778037668791,13571,HTTP Request,200,OK,Thread Group 1-102,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,13571,0,0
 1778037674192,8170,HTTP Request,200,OK,Thread Group 1-31,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8170,0,0
 1778037669020,13483,HTTP Request,200,OK,Thread Group 1-106,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,13483,0,0
@@ -482,8 +482,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037667461,29999,HTTP Request,500,Internal Server Error,Thread Group 1-39,text,false,,908,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,29999,0,0
 1778037688691,8826,HTTP Request,200,OK,Thread Group 1-28,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8826,0,0
 1778037688393,9151,HTTP Request,200,OK,Thread Group 1-57,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9151,0,0
-1778037688906,8679,HTTP Request,200,OK,Thread Group 1-154,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8679,0,0
 1778037688593,8992,HTTP Request,200,OK,Thread Group 1-134,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8992,0,0
+1778037688906,8679,HTTP Request,200,OK,Thread Group 1-154,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8679,0,0
 1778037688970,8635,HTTP Request,200,OK,Thread Group 1-127,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8635,0,0
 1778037685328,12302,HTTP Request,200,OK,Thread Group 1-49,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,12302,0,0
 1778037689463,8205,HTTP Request,200,OK,Thread Group 1-149,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8205,0,0
@@ -578,8 +578,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037697245,9269,HTTP Request,200,OK,Thread Group 1-78,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9269,0,0
 1778037697323,9192,HTTP Request,200,OK,Thread Group 1-41,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9192,0,0
 1778037697672,8853,HTTP Request,200,OK,Thread Group 1-81,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8853,0,0
-1778037697718,8826,HTTP Request,200,OK,Thread Group 1-14,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8826,0,0
 1778037697693,8855,HTTP Request,200,OK,Thread Group 1-54,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8855,0,0
+1778037697718,8826,HTTP Request,200,OK,Thread Group 1-14,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8826,0,0
 1778037697462,9119,HTTP Request,200,OK,Thread Group 1-39,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9119,0,0
 1778037697227,9362,HTTP Request,200,OK,Thread Group 1-31,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9362,0,0
 1778037697772,8828,HTTP Request,200,OK,Thread Group 1-146,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8827,0,0
@@ -791,14 +791,14 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037715520,9046,HTTP Request,200,OK,Thread Group 1-123,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9046,0,0
 1778037715384,9188,HTTP Request,200,OK,Thread Group 1-137,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9188,0,0
 1778037715422,9153,HTTP Request,200,OK,Thread Group 1-95,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9153,0,0
-1778037715440,9162,HTTP Request,200,OK,Thread Group 1-47,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9162,0,17
 1778037715060,9542,HTTP Request,200,OK,Thread Group 1-20,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9542,0,22
+1778037715440,9162,HTTP Request,200,OK,Thread Group 1-47,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9162,0,17
 1778037715135,9483,HTTP Request,200,OK,Thread Group 1-62,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9483,0,17
 1778037715649,8971,HTTP Request,200,OK,Thread Group 1-7,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8971,0,17
 1778037715518,9105,HTTP Request,200,OK,Thread Group 1-75,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9105,0,17
 1778037715142,9548,HTTP Request,200,OK,Thread Group 1-74,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9548,0,17
-1778037715624,9105,HTTP Request,200,OK,Thread Group 1-78,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9105,0,19
 1778037715544,9185,HTTP Request,200,OK,Thread Group 1-85,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9185,0,21
+1778037715624,9105,HTTP Request,200,OK,Thread Group 1-78,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9105,0,19
 1778037715647,9095,HTTP Request,200,OK,Thread Group 1-115,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9095,0,0
 1778037715398,9349,HTTP Request,200,OK,Thread Group 1-128,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9349,0,0
 1778037699208,25541,HTTP Request,200,OK,Thread Group 1-122,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25541,0,0
@@ -1223,8 +1223,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037742941,24494,HTTP Request,200,OK,Thread Group 1-132,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24494,0,18
 1778037742536,24903,HTTP Request,200,OK,Thread Group 1-106,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24903,0,26
 1778037759112,8329,HTTP Request,200,OK,Thread Group 1-122,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8329,0,0
-1778037759070,8399,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8398,0,0
 1778037758898,8570,HTTP Request,200,OK,Thread Group 1-33,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8570,0,0
+1778037759070,8399,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8398,0,0
 1778037758689,8787,HTTP Request,200,OK,Thread Group 1-158,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8787,0,0
 1778037758905,8583,HTTP Request,200,OK,Thread Group 1-48,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8583,0,0
 1778037758720,8771,HTTP Request,200,OK,Thread Group 1-8,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8771,0,0
@@ -1324,8 +1324,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037767328,8755,HTTP Request,200,OK,Thread Group 1-138,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8755,0,0
 1778037767435,8674,HTTP Request,200,OK,Thread Group 1-132,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8674,0,0
 1778037767304,8837,HTTP Request,200,OK,Thread Group 1-44,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8837,0,0
-1778037767405,8777,HTTP Request,200,OK,Thread Group 1-16,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8777,0,0
 1778037767261,8921,HTTP Request,200,OK,Thread Group 1-40,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8921,0,0
+1778037767405,8777,HTTP Request,200,OK,Thread Group 1-16,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8777,0,0
 1778037767012,9171,HTTP Request,200,OK,Thread Group 1-130,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9171,0,0
 1778037751481,24711,HTTP Request,200,OK,Thread Group 1-102,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24711,0,0
 1778037767469,8731,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8731,0,0
@@ -1451,8 +1451,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037767535,25315,HTTP Request,200,OK,Thread Group 1-28,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25315,0,0
 1778037767545,25312,HTTP Request,200,OK,Thread Group 1-156,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25312,0,0
 1778037767533,25397,HTTP Request,200,OK,Thread Group 1-140,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25397,0,0
-1778037767558,25423,HTTP Request,200,OK,Thread Group 1-17,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25423,0,0
 1778037767501,25480,HTTP Request,200,OK,Thread Group 1-153,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25480,0,0
+1778037767558,25423,HTTP Request,200,OK,Thread Group 1-17,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25423,0,0
 1778037767563,25433,HTTP Request,200,OK,Thread Group 1-103,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25433,0,0
 1778037767611,25399,HTTP Request,200,OK,Thread Group 1-7,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25399,0,0
 1778037767563,25497,HTTP Request,200,OK,Thread Group 1-67,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25497,0,0
@@ -1534,8 +1534,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037776242,24765,HTTP Request,200,OK,Thread Group 1-110,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24765,0,0
 1778037775973,25041,HTTP Request,200,OK,Thread Group 1-13,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25041,0,0
 1778037776076,24967,HTTP Request,200,OK,Thread Group 1-90,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24967,0,0
-1778037776306,24846,HTTP Request,200,OK,Thread Group 1-86,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24845,0,0
 1778037775904,25248,HTTP Request,200,OK,Thread Group 1-43,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25247,0,21
+1778037776306,24846,HTTP Request,200,OK,Thread Group 1-86,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24845,0,0
 1778037776289,24906,HTTP Request,200,OK,Thread Group 1-34,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24906,0,21
 1778037776082,25114,HTTP Request,200,OK,Thread Group 1-117,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25114,0,0
 1778037776142,25055,HTTP Request,200,OK,Thread Group 1-44,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25055,0,0
@@ -1565,18 +1565,18 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037793060,8643,HTTP Request,200,OK,Thread Group 1-67,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8643,0,20
 1778037776487,25225,HTTP Request,200,OK,Thread Group 1-5,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25225,0,22
 1778037792996,8729,HTTP Request,200,OK,Thread Group 1-103,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8729,0,0
-1778037776200,25642,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25642,0,0
 1778037793011,8831,HTTP Request,200,OK,Thread Group 1-7,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8831,0,27
+1778037776200,25642,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25642,0,0
 1778037792857,8985,HTTP Request,200,OK,Thread Group 1-156,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8985,0,0
 1778037793371,8488,HTTP Request,200,OK,Thread Group 1-61,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8488,0,0
 1778037793074,8786,HTTP Request,200,OK,Thread Group 1-83,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8786,0,18
 1778037776474,25386,HTTP Request,200,OK,Thread Group 1-76,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25386,0,0
 1778037793220,8644,HTTP Request,200,OK,Thread Group 1-48,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8644,0,19
 1778037793490,8374,HTTP Request,200,OK,Thread Group 1-123,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8374,0,16
-1778037793084,8780,HTTP Request,200,OK,Thread Group 1-27,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8780,0,23
 1778037792830,9034,HTTP Request,200,OK,Thread Group 1-14,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9034,0,22
-1778037793301,8610,HTTP Request,200,OK,Thread Group 1-126,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8610,0,0
+1778037793084,8780,HTTP Request,200,OK,Thread Group 1-27,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8780,0,23
 1778037793564,8347,HTTP Request,200,OK,Thread Group 1-121,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8346,0,0
+1778037793301,8610,HTTP Request,200,OK,Thread Group 1-126,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8610,0,0
 1778037776183,25844,HTTP Request,200,OK,Thread Group 1-40,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25844,0,18
 1778037793158,8870,HTTP Request,200,OK,Thread Group 1-47,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8870,0,18
 1778037792751,9277,HTTP Request,200,OK,Thread Group 1-80,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9277,0,22
@@ -1616,8 +1616,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037784998,24719,HTTP Request,200,OK,Thread Group 1-31,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24719,0,18
 1778037785115,24697,HTTP Request,200,OK,Thread Group 1-92,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24697,0,18
 1778037784893,24926,HTTP Request,200,OK,Thread Group 1-111,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24926,0,19
-1778037785033,24786,HTTP Request,200,OK,Thread Group 1-41,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24786,0,16
 1778037784882,24937,HTTP Request,200,OK,Thread Group 1-49,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24937,0,18
+1778037785033,24786,HTTP Request,200,OK,Thread Group 1-41,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24786,0,16
 1778037785027,24814,HTTP Request,200,OK,Thread Group 1-136,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24814,0,21
 1778037784975,24917,HTTP Request,200,OK,Thread Group 1-122,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24917,0,23
 1778037784923,24969,HTTP Request,200,OK,Thread Group 1-21,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24969,0,0
@@ -1645,11 +1645,11 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037801703,8394,HTTP Request,200,OK,Thread Group 1-67,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8394,0,0
 1778037784979,25118,HTTP Request,200,OK,Thread Group 1-71,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25118,0,19
 1778037785045,25062,HTTP Request,200,OK,Thread Group 1-150,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25062,0,0
-1778037801197,8920,HTTP Request,200,OK,Thread Group 1-44,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8920,0,21
 1778037801008,9109,HTTP Request,200,OK,Thread Group 1-110,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9109,0,21
+1778037801197,8920,HTTP Request,200,OK,Thread Group 1-44,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8920,0,21
 1778037801865,8268,HTTP Request,200,OK,Thread Group 1-48,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8268,0,0
-1778037801672,8479,HTTP Request,200,OK,Thread Group 1-28,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8479,0,0
 1778037801560,8591,HTTP Request,200,OK,Thread Group 1-130,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8591,0,20
+1778037801672,8479,HTTP Request,200,OK,Thread Group 1-28,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8479,0,0
 1778037801442,8732,HTTP Request,200,OK,Thread Group 1-66,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8732,0,0
 1778037801843,8335,HTTP Request,200,OK,Thread Group 1-156,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8335,0,0
 1778037801865,8315,HTTP Request,200,OK,Thread Group 1-123,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8313,0,0
@@ -1659,15 +1659,15 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037801311,8941,HTTP Request,200,OK,Thread Group 1-82,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8941,0,0
 1778037801005,9256,HTTP Request,200,OK,Thread Group 1-96,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9256,0,0
 1778037785088,25184,HTTP Request,200,OK,Thread Group 1-1,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25184,0,17
-1778037784915,25402,HTTP Request,200,OK,Thread Group 1-73,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25402,0,0
 1778037800801,9516,HTTP Request,200,OK,Thread Group 1-125,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9516,0,20
+1778037784915,25402,HTTP Request,200,OK,Thread Group 1-73,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25402,0,0
 1778037801337,9026,HTTP Request,200,OK,Thread Group 1-75,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9026,0,0
 1778037801015,9368,HTTP Request,200,OK,Thread Group 1-13,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9368,0,20
 1778037785030,25353,HTTP Request,200,OK,Thread Group 1-141,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25353,0,18
 1778037785033,25364,HTTP Request,200,OK,Thread Group 1-108,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25364,0,0
 1778037801152,9246,HTTP Request,200,OK,Thread Group 1-43,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9246,0,0
-1778037785356,25092,HTTP Request,200,OK,Thread Group 1-68,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25092,0,21
 1778037784872,25576,HTTP Request,200,OK,Thread Group 1-101,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25576,0,18
+1778037785356,25092,HTTP Request,200,OK,Thread Group 1-68,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25092,0,21
 1778037801538,8925,HTTP Request,200,OK,Thread Group 1-132,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8925,0,0
 1778037801694,8773,HTTP Request,200,OK,Thread Group 1-95,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8773,0,0
 1778037785070,25398,HTTP Request,200,OK,Thread Group 1-93,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25398,0,0
@@ -1933,8 +1933,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037827633,8826,HTTP Request,200,OK,Thread Group 1-155,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8826,0,0
 1778037827839,8621,HTTP Request,200,OK,Thread Group 1-52,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8620,0,0
 1778037827967,8524,HTTP Request,200,OK,Thread Group 1-32,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8524,0,0
-1778037827942,8559,HTTP Request,200,OK,Thread Group 1-39,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8559,0,0
 1778037811558,24942,HTTP Request,200,OK,Thread Group 1-10,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24942,0,0
+1778037827942,8559,HTTP Request,200,OK,Thread Group 1-39,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8559,0,0
 1778037827375,9171,HTTP Request,200,OK,Thread Group 1-61,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9171,0,0
 1778037827466,9083,HTTP Request,200,OK,Thread Group 1-53,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9083,0,0
 1778037827267,9283,HTTP Request,200,OK,Thread Group 1-69,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9281,0,0
@@ -2101,8 +2101,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037844964,8538,HTTP Request,200,OK,Thread Group 1-140,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8538,0,0
 1778037844719,8789,HTTP Request,200,OK,Thread Group 1-68,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8789,0,0
 1778037845006,8508,HTTP Request,200,OK,Thread Group 1-51,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8507,0,0
-1778037845029,8521,HTTP Request,200,OK,Thread Group 1-7,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8521,0,0
 1778037844900,8650,HTTP Request,200,OK,Thread Group 1-159,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8650,0,0
+1778037845029,8521,HTTP Request,200,OK,Thread Group 1-7,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8521,0,0
 1778037844993,8558,HTTP Request,200,OK,Thread Group 1-46,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8557,0,0
 1778037828396,25166,HTTP Request,200,OK,Thread Group 1-26,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25166,0,0
 1778037844744,8817,HTTP Request,200,OK,Thread Group 1-86,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8817,0,0
@@ -2278,8 +2278,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037862063,8966,HTTP Request,200,OK,Thread Group 1-135,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8966,0,0
 1778037861463,9651,HTTP Request,200,OK,Thread Group 1-69,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9651,0,18
 1778037861677,9482,HTTP Request,200,OK,Thread Group 1-24,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9482,0,0
-1778037862074,9093,HTTP Request,200,OK,Thread Group 1-60,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9093,0,0
 1778037861437,9733,HTTP Request,200,OK,Thread Group 1-52,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9733,0,22
+1778037862074,9093,HTTP Request,200,OK,Thread Group 1-60,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9093,0,0
 1778037845129,26035,HTTP Request,200,OK,Thread Group 1-102,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26035,0,0
 1778037861972,9206,HTTP Request,200,OK,Thread Group 1-111,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9206,0,0
 1778037862234,8953,HTTP Request,200,OK,Thread Group 1-92,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8953,0,0
@@ -2447,8 +2447,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037879086,9383,HTTP Request,200,OK,Thread Group 1-12,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9383,0,0
 1778037878933,9603,HTTP Request,200,OK,Thread Group 1-20,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9603,0,0
 1778037878969,9576,HTTP Request,200,OK,Thread Group 1-115,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9576,0,0
-1778037878813,9758,HTTP Request,200,OK,Thread Group 1-112,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9758,0,0
 1778037879072,9499,HTTP Request,200,OK,Thread Group 1-125,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9499,0,20
+1778037878813,9758,HTTP Request,200,OK,Thread Group 1-112,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9758,0,0
 1778037878783,9790,HTTP Request,200,OK,Thread Group 1-93,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9789,0,22
 1778037862670,25958,HTTP Request,200,OK,Thread Group 1-116,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25958,0,0
 1778037878754,9884,HTTP Request,200,OK,Thread Group 1-75,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9884,0,0
@@ -2470,8 +2470,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037870561,25333,HTTP Request,200,OK,Thread Group 1-8,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25333,0,0
 1778037870690,25205,HTTP Request,200,OK,Thread Group 1-17,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25205,0,0
 1778037870634,25277,HTTP Request,200,OK,Thread Group 1-152,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25277,0,19
-1778037870443,25561,HTTP Request,200,OK,Thread Group 1-32,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25561,0,0
 1778037871187,24817,HTTP Request,200,OK,Thread Group 1-92,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24816,0,0
+1778037870443,25561,HTTP Request,200,OK,Thread Group 1-32,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25561,0,0
 1778037870561,25444,HTTP Request,200,OK,Thread Group 1-4,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25443,0,0
 1778037871175,24830,HTTP Request,200,OK,Thread Group 1-52,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24830,0,0
 1778037870541,25464,HTTP Request,200,OK,Thread Group 1-83,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25464,0,20
@@ -2520,8 +2520,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037887405,8992,HTTP Request,200,OK,Thread Group 1-153,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8992,0,0
 1778037871972,24425,HTTP Request,200,OK,Thread Group 1-101,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24424,0,20
 1778037887675,8739,HTTP Request,200,OK,Thread Group 1-68,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8739,0,0
-1778037887507,8916,HTTP Request,200,OK,Thread Group 1-105,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8916,0,0
 1778037871476,24946,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24946,0,0
+1778037887507,8916,HTTP Request,200,OK,Thread Group 1-105,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8916,0,0
 1778037887432,8999,HTTP Request,200,OK,Thread Group 1-98,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8999,0,26
 1778037871495,24939,HTTP Request,200,OK,Thread Group 1-78,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24938,0,0
 1778037870947,25487,HTTP Request,200,OK,Thread Group 1-15,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25486,0,0
@@ -2628,8 +2628,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037896082,10273,HTTP Request,200,OK,Thread Group 1-36,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,10273,0,0
 1778037880543,30010,HTTP Request,500,Internal Server Error,Thread Group 1-72,text,false,,908,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,30010,0,0
 1778037902744,8525,HTTP Request,200,OK,Thread Group 1-154,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,8525,0,0
-1778037887968,25066,HTTP Request,200,OK,Thread Group 1-59,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25066,0,29
 1778037888100,24934,HTTP Request,200,OK,Thread Group 1-64,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24934,0,0
+1778037887968,25066,HTTP Request,200,OK,Thread Group 1-59,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25066,0,29
 1778037888129,24943,HTTP Request,200,OK,Thread Group 1-79,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24943,0,0
 1778037888081,25006,HTTP Request,200,OK,Thread Group 1-129,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25006,0,0
 1778037887971,25228,HTTP Request,200,OK,Thread Group 1-132,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25228,0,24
@@ -2644,8 +2644,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037888086,25417,HTTP Request,200,OK,Thread Group 1-150,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25416,0,0
 1778037887816,25687,HTTP Request,200,OK,Thread Group 1-40,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25687,0,0
 1778037888241,25287,HTTP Request,200,OK,Thread Group 1-34,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25287,0,0
-1778037888326,25212,HTTP Request,200,OK,Thread Group 1-46,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25212,0,0
 1778037888326,25212,HTTP Request,200,OK,Thread Group 1-97,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25212,0,0
+1778037888326,25212,HTTP Request,200,OK,Thread Group 1-46,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25212,0,0
 1778037888574,25013,HTTP Request,200,OK,Thread Group 1-93,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25013,0,0
 1778037888045,25560,HTTP Request,200,OK,Thread Group 1-159,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25559,0,0
 1778037887950,25655,HTTP Request,200,OK,Thread Group 1-121,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25655,0,0
@@ -2712,8 +2712,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037889070,30016,HTTP Request,500,Internal Server Error,Thread Group 1-130,text,false,,908,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,30016,0,0
 1778037896323,24482,HTTP Request,200,OK,Thread Group 1-2,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24482,0,0
 1778037896413,24600,HTTP Request,200,OK,Thread Group 1-68,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,24600,0,0
-1778037896422,25373,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25373,0,0
 1778037896370,25425,HTTP Request,200,OK,Thread Group 1-24,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25425,0,0
+1778037896422,25373,HTTP Request,200,OK,Thread Group 1-120,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25373,0,0
 1778037896371,25822,HTTP Request,200,OK,Thread Group 1-56,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25822,0,0
 1778037896422,25782,HTTP Request,200,OK,Thread Group 1-105,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25782,0,0
 1778037896398,25807,HTTP Request,200,OK,Thread Group 1-101,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25807,0,0
@@ -2728,8 +2728,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037896442,25931,HTTP Request,200,OK,Thread Group 1-131,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25931,0,0
 1778037896443,25930,HTTP Request,200,OK,Thread Group 1-107,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25930,0,0
 1778037896356,26036,HTTP Request,200,OK,Thread Group 1-157,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26036,0,0
-1778037896509,25890,HTTP Request,200,OK,Thread Group 1-23,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25889,0,0
 1778037913034,9365,HTTP Request,200,OK,Thread Group 1-64,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9364,0,0
+1778037896509,25890,HTTP Request,200,OK,Thread Group 1-23,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25889,0,0
 1778037896552,25862,HTTP Request,200,OK,Thread Group 1-18,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25862,0,0
 1778037896384,26051,HTTP Request,200,OK,Thread Group 1-118,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26051,0,0
 1778037896431,26013,HTTP Request,200,OK,Thread Group 1-98,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26013,0,0
@@ -2737,8 +2737,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037913072,9446,HTTP Request,200,OK,Thread Group 1-79,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9446,0,0
 1778037913034,9485,HTTP Request,200,OK,Thread Group 1-59,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9485,0,0
 1778037896459,26060,HTTP Request,200,OK,Thread Group 1-87,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26060,0,0
-1778037896396,26143,HTTP Request,200,OK,Thread Group 1-60,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26143,0,24
 1778037896600,25939,HTTP Request,200,OK,Thread Group 1-25,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25939,0,0
+1778037896396,26143,HTTP Request,200,OK,Thread Group 1-60,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26143,0,24
 1778037896754,25812,HTTP Request,200,OK,Thread Group 1-76,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,25812,0,0
 1778037913377,9237,HTTP Request,200,OK,Thread Group 1-137,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9237,0,22
 1778037896470,26145,HTTP Request,200,OK,Thread Group 1-11,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,26144,0,0
@@ -2775,8 +2775,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037913662,9752,HTTP Request,200,OK,Thread Group 1-67,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9751,0,0
 1778037914068,9381,HTTP Request,200,OK,Thread Group 1-141,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9381,0,21
 1778037913993,9591,HTTP Request,200,OK,Thread Group 1-66,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9591,0,24
-1778037913777,9807,HTTP Request,200,OK,Thread Group 1-81,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9806,0,19
 1778037913754,9830,HTTP Request,200,OK,Thread Group 1-26,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9830,0,20
+1778037913777,9807,HTTP Request,200,OK,Thread Group 1-81,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9806,0,19
 1778037913747,9888,HTTP Request,200,OK,Thread Group 1-96,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9888,0,0
 1778037913763,9872,HTTP Request,200,OK,Thread Group 1-42,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9872,0,0
 1778037914114,9584,HTTP Request,200,OK,Thread Group 1-52,text,true,,641,467,160,160,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,9584,0,0
@@ -3076,8 +3076,8 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1778037932397,21822,HTTP Request,200,OK,Thread Group 1-122,text,true,,641,467,41,41,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,21822,0,26
 1778037931658,22644,HTTP Request,200,OK,Thread Group 1-106,text,true,,641,467,40,40,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,22643,0,0
 1778037933530,20784,HTTP Request,200,OK,Thread Group 1-11,text,true,,641,467,39,39,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,20784,0,0
-1778037932684,21718,HTTP Request,200,OK,Thread Group 1-79,text,true,,641,467,38,38,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,21718,0,0
 1778037932628,21774,HTTP Request,200,OK,Thread Group 1-87,text,true,,641,467,38,38,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,21774,0,0
+1778037932684,21718,HTTP Request,200,OK,Thread Group 1-79,text,true,,641,467,38,38,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,21718,0,0
 1778037932445,21994,HTTP Request,200,OK,Thread Group 1-137,text,true,,641,467,36,36,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,21994,0,0
 1778037933109,21450,HTTP Request,200,OK,Thread Group 1-15,text,true,,641,467,35,35,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,21450,0,0
 1778037933019,21540,HTTP Request,200,OK,Thread Group 1-107,text,true,,641,467,35,35,https://stg.yape.com.bo/channel-rm-movements/channel/movements/v1/get,21540,0,0
