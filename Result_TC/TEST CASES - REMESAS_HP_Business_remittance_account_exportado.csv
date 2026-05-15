@@ -1,0 +1,217 @@
+﻿Identificador,Tipo de elemento de trabajo,Título,Paso de prueba,Acción del paso,Paso esperado,Ruta de acceso del área,Asignado a,Estado,Etiquetas,Proyecto de equipo
+"125276","Caso de prueba","[REM-RMT-ACC-001][HP] - Búsqueda exitosa - Cliente activo sin bloqueos",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y se tienen datos válidos
+Y Request con phoneNumber de cliente activo","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 1
+Y status.statusDescription = ""Usuario activo""
+Y response contiene las 6 secciones completas
+Y personalInformation contiene clientId, documentNumber, firstName, lastName
+Y contactInformation contiene phoneId, phoneNumber
+Y account contiene accountNumber, accountId","Respuesta según especificación",,,,,
+"125277","Caso de prueba","[REM-RMT-ACC-002][HP] - Cliente bloqueado por PinAttempts - ACTIVO para remesas",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y se tienen datos válidos
+Y Request con phoneNumber de cliente bloqueado por PinAttempts
+Y Backend tiene AccountLock='B', pero ModifiedBy = AccountNumber","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 1
+Y status.statusDescription = ""Usuario activo""
+Y cliente puede recibir remesas","Respuesta según especificación",,,,,
+"125278","Caso de prueba","[REM-RMT-ACC-003][HP] - Cliente con Retención Judicial - ACTIVO para remesas",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y se tienen datos válidos
+Y Request con phoneNumber de cliente con retención judicial
+Y Backend tiene AccountLock='B' y ModifiedBy contiene 'RETF'","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 1
+Y status.statusDescription = ""Usuario activo""
+Y cliente puede recibir remesas","Respuesta según especificación",,,,,
+"125279","Caso de prueba","[REM-RMT-ACC-004][HP] - Validar ClientType YAPE - CIC empieza con FIC",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente YAPE
+Y Backend retorna CIC que empieza con ""FIC""","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y personalInformation.clientType = ""YAPE""
+Y personalInformation.cic empieza con ""FIC""
+Y status.statusCode = 1","Respuesta según especificación",,,,,
+"125280","Caso de prueba","[REM-RMT-ACC-005][HP] - Validar estructura completa de personalInformation",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado una búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y el response contiene la sección personalInformation: clientId, documentType, brithDate, civilStatus, nationality, firstname, lastName, middleName, documentNumber, documentComplement, documentExtension, email, nit","Respuesta según especificación",,,,,
+"125281","Caso de prueba","[REM-RMT-ACC-006][HP] - Validar estructura completa de contactInformation",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y el response contiene la sección contactInformation: phoneId, phoneNumber, notificactionId","Respuesta según especificación",,,,,
+"125282","Caso de prueba","[REM-RMT-ACC-007][HP] - Validar campos opcionales null - Cliente sin segundo nombre",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente sin segundo nombre","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y personalInformation.middleName = null o """"
+Y otros campos obligatorios están presentes","Respuesta según especificación",,,,,
+"125283","Caso de prueba","[REM-RMT-ACC-008][HP] - Validar campos opcionales - Cliente sin email",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente sin email","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y personalInformation.email = null o """"
+Y otros campos están completos","Respuesta según especificación",,,,,
+"125284","Caso de prueba","[REM-RMT-ACC-009][HP] - Validar campos opcionales - Cliente sin información laboral",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente sin datos laborales","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y jobInformation.occupation = """" o null
+Y jobInformation.profession = """" o null
+Y jobInformation.economicActivity = null","Respuesta según especificación",,,,,
+"125285","Caso de prueba","[REM-RMT-ACC-010][HP] - Validar estructura completa del response - 6 secciones",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se recibe el response","
+",,,,,
+,,,"3","Entonces response contiene exactamente 6 secciones: personalInformation, contactInformation, jobInformation, location, account, status
+
+","Respuesta según especificación",,,,,
+"125286","Caso de prueba","[REM-RMT-ACC-011][HP] - Cliente bloqueado por Fraude - BLOQUEADO para remesas",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente bloqueado por fraude
+Y Backend tiene AccountLock='F' o CellLock='F'","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 6
+Y status.statusDescription = ""Cliente bloqueado por fraude""
+Y cliente NO puede recibir remesas","Respuesta según especificación",,,,,
+"125287","Caso de prueba","[REM-RMT-ACC-012][HP] - Cliente bloqueado por FATCA - BLOQUEADO para remesas",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente bloqueado por FATCA
+Y Backend tiene AccountLock='B' y ModifiedBy contiene 'FATCA'","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 1
+Y status.statusDescription = ""Cliente bloqueado por FATCA""
+Y cliente NO puede recibir remesas","Respuesta según especificación",,,,,
+"125288","Caso de prueba","[REM-RMT-ACC-013][HP] - Cliente bloqueado por AN/EC - BLOQUEADO para remesas",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente en archivo negativo
+Y Backend tiene AccountLock='B' y ModifiedBy contiene 'EC_AN'","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 2
+Y status.statusDescription = ""Cliente bloqueado por AN/EC""
+Y cliente NO puede recibir remesas","Respuesta según especificación",,,,,
+"125289","Caso de prueba","[REM-RMT-ACC-014][HP] - Cliente bloqueado por falta de Selfie - BLOQUEADO para remesas",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente sin selfie
+Y Backend tiene AccountLock='B' y ModifiedBy contiene 'BLOQ_SELFIE'","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 5
+Y status.statusDescription = ""Cliente bloqueado por falta de selfie""
+Y cliente NO puede recibir remesas","Respuesta según especificación",,,,,
+"125290","Caso de prueba","[REM-RMT-ACC-015][HP] - Cliente bloqueado genérico - Sin motivo específico",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber de cliente bloqueado
+Y Backend tiene AccountLock='B' pero sin indicador específico en ModifiedBy",,,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 0
+Y status.statusDescription = ""Cliente bloqueado.""
+Y cliente NO puede recibir remesas","Respuesta según especificación",,,,,
+"125291","Caso de prueba","[REM-RMT-ACC-016][HP] - Fraude prevalece sobre otros bloqueos",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber que tiene múltiples bloqueos
+Y Backend tiene AccountLock='F' (fraude)
+Y ModifiedBy contiene 'FATCA'",,,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y status.statusCode = 6
+Y status.statusDescription = ""Cliente bloqueado por fraude""
+Y fraude prevalece sobre FATCA","Respuesta según especificación",,,,,
+"125292","Caso de prueba","[REM-RMT-ACC-017][HP] - Validar consistencia de status cuando activo",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente activo",,,,,,
+,,,"2","Cuando se recibe el response","
+",,,,,
+,,,"3","Entonces status.statusCode = 1
+Y status.statusDescription = ""Usuario activo""
+Y personalInformation, contactInformation y account están completos
+Y cliente habilitado para recibir remesas","Respuesta según especificación",,,,,
+"125314","Caso de prueba","[REM-RMT-ACC-018][HP] - Todos los headers válidos - Request completo",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Funcional","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con phoneNumber válido
+Y Headers completos: Authorization, X-Correlation-Id, Request-Date, Channel, PublicToken, AppUserId","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y response completo sin errores","Respuesta según especificación",,,,,
+"125318","Caso de prueba","[REM-RMT-ACC-019][HP] - Validar estructura de jobInformation",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y el response jobInformation contiene: occupation, profession","Respuesta según especificación",,,,,
+"125319","Caso de prueba","[REM-RMT-ACC-020][HP] - Validar estructura de location",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y el response location contiene: department, province, locality, residence, city, address","Respuesta según especificación",,,,,
+"125320","Caso de prueba","[REM-RMT-ACC-021][HP] - Validar estructura de account",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se recibe el response","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y el response account contiene: accountId, accountNumber","Respuesta según especificación",,,,,
+"125321","Caso de prueba","[REM-RMT-ACC-022][HP] - Validar estructura de status",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y el response status contiene: statusCode, statusDescription","Respuesta según especificación",,,,,
+"125322","Caso de prueba","[REM-RMT-ACC-023][HP] - Validar tipos de datos en response",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Diseño","Contrato; Regression","BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado búsqueda exitosa de cliente","
+",,,,,
+,,,"2","Cuando se envía POST a /business/remittance/account/v1/get","
+",,,,,
+,,,"3","Entonces validar tipos de datos: personalInformation.clienteId, contactInformation.phoneId, account.accountId estos sean de tipo integer
+Y todos los demas campos sean de tipo String","Respuesta según especificación",,,,,
