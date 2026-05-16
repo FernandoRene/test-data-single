@@ -1,0 +1,241 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,Created Date,State,Tags,Team Project
+"142501","Test Case","[REM-RMT-SP-MOV-GET-001][HP] - Exitoso por cellphone",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando",,,,,,,
+,,,"3","Entonces","Respuesta según especificación",,,,,,
+"142502","Test Case","[REM-RMT-SP-MOV-GET-002][HP] - Con ambos parámetros (cellphone + requestId)",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando",,,,,,,
+,,,"3","Entonces","Respuesta según especificación",,,,,,
+"142503","Test Case","[REM-RMT-SP-MOV-GET-003][HP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando ",,,,,,,
+,,,"3","Entonces ","Respuesta según especificación",,,,,,
+"142504","Test Case","[REM-RMT-SP-MOV-GET-004][HP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando ",,,,,,,
+,,,"3","Entonces","Respuesta según especificación",,,,,,
+"142505","Test Case","[REM-RMT-SP-MOV-GET-005][HP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando When: Ejecuto GET exitoso",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 200
+Y And: Cada movimiento contiene: requestId, paymentCellphone, paymentNumberOperationReference, payerName, paymentDate, paymentGlosa, paymentAmount, paymentRemittance, paymentCountryOrigin, status","Respuesta según especificación",,,,,,
+"142506","Test Case","[REM-RMT-SP-MOV-GET-001][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/get con {'cellphone': null, 'requestId': null}",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica al menos un parámetro requerido","Respuesta según especificación",,,,,,
+"142507","Test Case","[REM-RMT-SP-MOV-GET-002][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/get con {'requestId': 'FORMATO-INVALIDO'}",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica formato UUID inválido","Respuesta según especificación",,,,,,
+"142508","Test Case","[REM-RMT-SP-MOV-GET-003][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/get con body vacío {}",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica parámetros faltantes","Respuesta según especificación",,,,,,
+"142509","Test Case","[REM-RMT-SP-MOV-GET-004][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/get SIN header Authorization",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 401 Unauthorized","Respuesta según especificación",,,,,,
+"142510","Test Case","[REM-RMT-SP-MOV-GET-005][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/get SIN header PublicToken",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica header faltante","Respuesta según especificación",,,,,,
+"142511","Test Case","[REM-RMT-SP-MOV-GET-006][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header x-correlation-id",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142512","Test Case","[REM-RMT-SP-MOV-GET-007][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header request-date",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142513","Test Case","[REM-RMT-SP-MOV-GET-008][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header channel",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142514","Test Case","[REM-RMT-SP-MOV-GET-009][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header AppUserId",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142515","Test Case","[REM-RMT-SP-MOV-GET-010][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header content-type",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 415 Unsupported Media Type","Respuesta según especificación",,,,,,
+"142516","Test Case","[REM-RMT-SP-MOV-GET-011][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: API Support disponible",,,,,,,
+,,,"2","Cuando When: Content-Type: text/plain",,,,,,,
+,,,"3","Entonces Then: HTTP 415 Unsupported Media Type","Respuesta según especificación",,,,,,
+"142517","Test Case","[REM-RMT-SP-MOV-GET-012][UP] - Support Movements - GET",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible
+Y And: Existe movimiento con requestId='0e95d6ed-80f8-4bee-bd51-959ed8ced697'",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/get con {'requestId': '0e95d6ed-80f8-4bee-bd51-959ed8ced697'}",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 422
+Y And: Body indica que se falta el campo telefono","Respuesta según especificación",,,,,,
+"142518","Test Case","[REM-RMT-SP-MOV-SAVE-001][HP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible
+Y And: Datos válidos de movement",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save con status=true",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 201 Created
+Y And: Movement guardado correctamente
+Y And: requestId generado automáticamente","Respuesta según especificación",,,,,,
+"142519","Test Case","[REM-RMT-SP-MOV-SAVE-002][HP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save con status=false",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 201 Created
+Y And: Movement guardado con status=false","Respuesta según especificación",,,,,,
+"142520","Test Case","[REM-RMT-SP-MOV-SAVE-003][HP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save con paymentRemittance='RIA'",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 201 Created
+Y And: Remittance guardado correctamente","Respuesta según especificación",,,,,,
+"142521","Test Case","[REM-RMT-SP-MOV-SAVE-004][HP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save con paymentAmount=350.50",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 201 Created
+Y And: paymentAmount guardado con precisión decimal","Respuesta según especificación",,,,,,
+"142522","Test Case","[REM-RMT-SP-MOV-SAVE-001][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save SIN paymentCellphone",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica campo requerido","Respuesta según especificación",,,,,,
+"142523","Test Case","[REM-RMT-SP-MOV-SAVE-002][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save SIN paymentAmount",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica campo requerido","Respuesta según especificación",,,,,,
+"142524","Test Case","[REM-RMT-SP-MOV-SAVE-003][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save con paymentAmount=0",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica Amount debe ser > 0","Respuesta según especificación",,,,,,
+"142525","Test Case","[REM-RMT-SP-MOV-SAVE-004][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save con paymentCellphone invalido",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 422
+Y And: Mensaje indica el formato invalido","Respuesta según especificación",,,,,,
+"142526","Test Case","[REM-RMT-SP-MOV-SAVE-005][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save SIN header Authorization",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 401 Unauthorized","Respuesta según especificación",,,,,,
+"142527","Test Case","[REM-RMT-SP-MOV-SAVE-006][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save con body vacío {}",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica campos requeridos faltantes","Respuesta según especificación",,,,,,
+"142528","Test Case","[REM-RMT-SP-MOV-SAVE-007][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save SIN paymentRemittance",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica campo requerido","Respuesta según especificación",,,,,,
+"142529","Test Case","[REM-RMT-SP-MOV-SAVE-008][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/save SIN header PublicToken",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica header faltante","Respuesta según especificación",,,,,,
+"142530","Test Case","[REM-RMT-SP-MOV-SAVE-009][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header x-correlation-id",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142531","Test Case","[REM-RMT-SP-MOV-SAVE-010][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header request-date",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142532","Test Case","[REM-RMT-SP-MOV-SAVE-011][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header channel",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142533","Test Case","[REM-RMT-SP-MOV-SAVE-012][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header AppUserId",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142534","Test Case","[REM-RMT-SP-MOV-SAVE-013][UP] - Support Movements - SAVE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header content-type",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 415 Unsupported Media Type","Respuesta según especificación",,,,,,
+"142535","Test Case","[REM-RMT-SP-MOV-UPD-001][HP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible
+Y And: Existe movement",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update con nuevo paymentNumberOperationReference",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 200 OK
+Y And: paymentNumberOperationReference actualizado","Respuesta según especificación",,,,,,
+"142536","Test Case","[REM-RMT-SP-MOV-UPD-002][HP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible
+Y And: Existe movement con status=true",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update cambiando a status=false",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 200 OK
+Y And: status actualizado a false","Respuesta según especificación",,,,,,
+"142537","Test Case","[REM-RMT-SP-MOV-UPD-003][HP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible
+Y And: Existe movement completo",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update solo con status (sin otros campos)",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 200 OK
+Y And: Solo status actualizado
+Y And: Otros campos mantienen valores originales","Respuesta según especificación",,,,,,
+"142538","Test Case","[REM-RMT-SP-MOV-UPD-001][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update SIN requestId",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica requestId requerido","Respuesta según especificación",,,,,,
+"142539","Test Case","[REM-RMT-SP-MOV-UPD-002][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible
+Y And: NO existe movement con movId='INEXISTENTE'",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 404 Not Found
+Y And: Mensaje indica movement no encontrado","Respuesta según especificación",,,,,,
+"142540","Test Case","[REM-RMT-SP-MOV-UPD-003][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update SIN header Authorization",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 401 Unauthorized","Respuesta según especificación",,,,,,
+"142541","Test Case","[REM-RMT-SP-MOV-UPD-004][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update con body vacío {}",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica requestId requerido","Respuesta según especificación",,,,,,
+"142542","Test Case","[REM-RMT-SP-MOV-UPD-005][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto POST /v1/update con status='true' (string en lugar de boolean)",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica tipo de dato inválido","Respuesta según especificación",,,,,,
+"142543","Test Case","[REM-RMT-SP-MOV-UPD-006][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado Given: Sistema Support Movements disponible",,,,,,,
+,,,"2","Cuando When: Ejecuto PUT /v1/update SIN header PublicToken",,,,,,,
+,,,"3","Entonces Then: Respuesta HTTP 400 Bad Request
+Y And: Mensaje indica header faltante","Respuesta según especificación",,,,,,
+"142544","Test Case","[REM-RMT-SP-MOV-UPD-007][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header x-correlation-id",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142545","Test Case","[REM-RMT-SP-MOV-UPD-008][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header request-date",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142546","Test Case","[REM-RMT-SP-MOV-UPD-009][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header channel",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142547","Test Case","[REM-RMT-SP-MOV-UPD-010][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header AppUserId",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142548","Test Case","[REM-RMT-SP-MOV-UPD-011][UP] - Support Movements - UPDATE",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Fri May 15 2026 21:43:06 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado request sin header content-type",,,,,,,
+,,,"2","Cuando se envía la solicitud",,,,,,,
+,,,"3","Entonces se rechaza
+Y HTTP 415 Unsupported Media Type","Respuesta según especificación",,,,,,
