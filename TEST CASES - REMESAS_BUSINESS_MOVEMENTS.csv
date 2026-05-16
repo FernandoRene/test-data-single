@@ -1,0 +1,180 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,Created Date,State,Tags,Team Project
+"142700","Test Case","[REM-RMT-BS-MOV-GET-001][HP] - Movimientos Negocio - Filtro Celular",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con: { 'Cellphone': '63000036' } (formato boliviano válido)",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y OK; List<MovementGetResponse> con todos los movimientos del celular; Campos: MovId, Request...","Respuesta según especificación",,,,,,
+"142701","Test Case","[REM-RMT-BS-MOV-GET-002][HP] - Movimientos Negocio - Filtro Celular",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con: { 'Cellphone': '77123456', 'RequestId': 'guid' }",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y OK; Movimientos que cumplen ambos criterios (AND lógico)","Respuesta según especificación",,,,,,
+"142702","Test Case","[REM-RMT-BS-MOV-GET-003][HP] - Movimientos Negocio - Filtro Celular",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con Cellphone que no tiene movimientos registrados",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 204
+Y No Content (según controller) o con lista vacía","Respuesta según especificación",,,,,,
+"142703","Test Case","[REM-RMT-BS-MOV-GET-004][HP] - Movimientos Negocio - Sin Resultados",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con: { 'Cellphone': '63000036', 'RequestId': '227b2fa0-8917-4f87-b47e-61e988695219'",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 204
+Y No Content o con lista vacía","Respuesta según especificación",,,,,,
+"142704","Test Case","[REM-RMT-BS-MOV-GET-005][HP] - Movimientos Negocio - Filtro Celular",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y se tienen datos válidos
+Y POST /get con Cellphone: 6XXXXXXX, 7XXXXXXX, 71XXXXXX, etc. (8 dígitos)",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y OK; Búsqueda exitosa","Respuesta según especificación",,,,,,
+"142705","Test Case","[REM-RMT-BS-MOV-GET-006][HP] - Movimientos Negocio - Casos Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get que retorna 3+ movimientos del mismo celular",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y OK; Lista con todos los movimientos; Verificar orden (probablemente por PaymentDate desc)","Respuesta según especificación",,,,,,
+"142706","Test Case","[REM-RMT-BS-MOV-GET-007][HP] - Movimientos Negocio - Casos Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get exitoso",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe la respuesta esperada
+Y Cada item contiene 11 campos required: MovId (Guid), RequestId (Guid), PaymentCellphone (string), Pa...","Respuesta según especificación",,,,,,
+"142707","Test Case","[REM-RMT-BS-MOV-GET-008][HP] - Movimientos Negocio - Casos Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get exitoso",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe la respuesta esperada
+Y MovId y RequestId son Guid; PaymentAmount es decimal; PaymentDate es DateTime; Status es bool","Respuesta según especificación",,,,,,
+"142708","Test Case","[REM-RMT-BS-MOV-GET-009][HP] - Validación Contrato - Headers Obligatorios",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con headers: Content-Type, AuthToken, X-Correlation-Id, Request-Date, Channel, PrivateToken",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe HTTP 200 OK","Respuesta según especificación",,,,,,
+"142709","Test Case","[REM-RMT-BS-MOV-GET-010][HP] - Validación Contrato - Schema",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con Channel: REMYP",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 200
+Y OK; Channel válido","Respuesta según especificación",,,,,,
+"142710","Test Case","[REM-RMT-BS-MOV-GET-011][HP] - Validación Contrato - Formatos",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con Request-Date correcto",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe la respuesta esperada
+Y Request aceptado","Respuesta según especificación",,,,,,
+"142711","Test Case","[REM-RMT-BS-MOV-GET-012][HP] - Validación Contrato - Estructura Request",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Request con estructura correcta",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe la respuesta esperada
+Y Cellphone y RequestId son string","Respuesta según especificación",,,,,,
+"142712","Test Case","[REM-RMT-BS-MOV-GET-013][HP] - Validación Contrato - Estructura Response",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y GET exitoso",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe la respuesta esperada
+Y Response es List<MovementGetResponse>, no objeto único","Respuesta según especificación",,,,,,
+"142713","Test Case","[REM-RMT-BS-MOV-GET-001][UP] - Movimientos Negocio - Casos Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y faltan datos requeridos
+Y POST /get con: { 'Cellphone': null, 'RequestId': null }",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400
+Y Bad Request; Error: 'Debe especificar al menos un Cellphone o RequestId.'","Respuesta según especificación",,,,,,
+"142714","Test Case","[REM-RMT-BS-MOV-GET-002][UP] - Movimientos Negocio - Casos Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con: { 'RequestId': 'dca48f31-86fc-49a5-819d-005ce46a5030' } (Guid válido)",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400 o 422
+Y OK; List<MovementGetResponse> con movimientos asociados al RequestId","Respuesta según especificación",,,,,,
+"142715","Test Case","[REM-RMT-BS-MOV-GET-003][UP] - Movimientos Negocio - Casos Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y se tienen datos inválidos
+Y POST /get con: { 'RequestId': '12345' } (no es Guid)",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400 o 422
+Y Error: 'El formato de requestId no es valido. Formato correcto 00000000-0000-0...","Respuesta según especificación",,,,,,
+"142716","Test Case","[REM-RMT-BS-MOV-GET-004][UP] - Movimientos Negocio - Filtro Celular",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y se tienen datos inválidos
+Y POST /get con: { 'Cellphone': '123' } (no formato boliviano)",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400
+Y Bad Request; Error: 'El formato del número de celular es incorrecto.'","Respuesta según especificación",,,,,,
+"142717","Test Case","[REM-RMT-BS-MOV-GET-005][UP] - Movimientos Negocio - Casos Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /get con: { 'Cellphone': '63000036', 'RequestId': con espacios extra}",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400
+Y si no trimea automáticamente; o 200 si limpia el string","Respuesta según especificación",,,,,,
+"142718","Test Case","[REM-RMT-BS-MOV-GET-006][UP] - Validación Contrato - Schema",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y faltan datos requeridos
+Y POST /get sin AuthToken",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 401
+Y Unauthorized","Respuesta según especificación",,,,,,
+"142719","Test Case","[REM-RMT-BS-MOV-GET-007][UP] - Validación Contrato - Schema",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y faltan datos requeridos
+Y POST /get sin X-Correlation-Id",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400
+Y Bad Request; Header requerido","Respuesta según especificación",,,,,,
+"142720","Test Case","[REM-RMT-BS-MOV-GET-008][UP] - Validación Contrato - Schema",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y faltan datos requeridos
+Y POST /get sin PrivateToken",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400
+Y Bad Request; Header requerido","Respuesta según especificación",,,,,,
+"142721","Test Case","[REM-RMT-BS-MOV-GET-009][UP] - Seguridad - Headers Obligatorios",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y faltan datos requeridos
+Y POST /get sin Authorization",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 401
+Y Unauthorized","Respuesta según especificación",,,,,,
+"142722","Test Case","[REM-RMT-BS-MOV-GET-010][UP] - Seguridad - Autenticación IAM",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y se tienen datos inválidos
+Y POST /get con token inválido",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 401
+Y Unauthorized","Respuesta según especificación",,,,,,
+"142723","Test Case","[REM-RMT-BS-MOV-GET-011][UP] - Seguridad - Validaciones Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y faltan datos requeridos
+Y POST /get sin Channel",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe código de estado 400
+Y Bad Request; Header requerido","Respuesta según especificación",,,,,,
+"142724","Test Case","[REM-RMT-BS-MOV-GET-012][UP] - Seguridad - Validaciones Generales",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y Cellphone o RequestId con caracteres especiales o SQL injection",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe la respuesta esperada
+Y Sistema previene inyección; búsqueda segura sin resultados falsos","Respuesta según especificación",,,,,,
+"142725","Test Case","[REM-RMT-BS-MOV-GET-013][UP] - Seguridad - AuthToken Inválido",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /getInfo con AuthToken inválido",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe HTTP 401 Unauthorized","Respuesta según especificación",,,,,,
+"142726","Test Case","[REM-RMT-BS-MOV-GET-014][UP] - Seguridad - AuthToken Formato Incorrecto",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /getInfo con AuthToken no-GUID",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe HTTP 400 Bad Request","Respuesta según especificación",,,,,,
+"142727","Test Case","[REM-RMT-BS-MOV-GET-015][UP] - Seguridad - PrivateToken Inválido",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /getInfo con PrivateToken inválido",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe HTTP 401 Unauthorized","Respuesta según especificación",,,,,,
+"142728","Test Case","[REM-RMT-BS-MOV-GET-016][UP] - Seguridad - Ambos Tokens Faltantes",,,,"BILLE_BILLETERA_YAPE_QA\REMESAS","Llusco Blanco Fernando Rene <BTBNET\T73459>","Sat May 16 2026 01:10:52 GMT-0400 (Bolivia Time)","Diseño",,"BILLE_BILLETERA_YAPE_QA"
+,,,"1","Dado el sistema está disponible
+Y POST /getInfo SIN AuthToken ni PrivateToken",,,,,,,
+,,,"2","Cuando se ejecuta la operación",,,,,,,
+,,,"3","Entonces se recibe HTTP 401 Unauthorized","Respuesta según especificación",,,,,,
